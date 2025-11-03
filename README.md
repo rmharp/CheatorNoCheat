@@ -11,6 +11,7 @@ Tools to compare code from knitted Rmd HTML files, flag suspicious similarity, r
 - [What is measured](#what-is-measured)
 - [What this tool is not](#what-this-tool-is-not)
 - [CLI](#cli)
+- [Demo](#demo)
 - [GUI](#gui)
   - [Analyze](#analyze)
   - [Review flagged pairs](#review-flagged-pairs)
@@ -73,7 +74,7 @@ Quick demo using included fictitious data:
 python compare_rmd_html_code.py sample_data/HW_Demo --open-flagged --open-limit 2
 ```
 
-Statistics and Cheater Network demo (prebuilt assignments):
+## Demo
 
 <p align="center">
   <img src="media/sample.gif" alt="Cheat or No Cheat Demo" width="720"/>
