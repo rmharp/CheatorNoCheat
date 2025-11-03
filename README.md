@@ -14,6 +14,7 @@ Tools to compare code from knitted Rmd HTML files, flag suspicious similarity, r
 
 - [Setup](#setup)
 - [What is measured](#what-is-measured)
+- [What this tool is not](#what-this-tool-is-not)
 - [CLI](#cli)
 - [GUI](#gui)
   - [Analyze](#analyze)
@@ -59,6 +60,10 @@ python gui_qt.py
 - Jaccard similarity (token-based) after code normalization.
 - Sequence similarity using Python’s `difflib.SequenceMatcher` ratio (shown as "Sequence").
 - Thresholds for Jaccard or Sequence scores can be adjusted in the GUI/CLI.
+
+## What this tool is not
+
+This tool is not a substitute for manually reviewing student submissions for cheating. The similarity scores used here (Jaccard and Sequence) are helpful proxies to highlight pairs with unusually similar code, but a high score does not necessarily mean a student has cheated. The intent is to reduce the time required for instructors, TAs, or graders to review all submissions by surfacing a smaller, curated set of suspicious pairs for human review and judgment.
 
 ## CLI
 
