@@ -1,0 +1,7 @@
+file_a,file_b,sequence_similarity,jaccard_similarity,flagged
+alice_hw.html,section1/dana_hw.html,0.6046,0.5273,1
+alice_hw.html,bob_hw.html,0.5095,0.4091,1
+bob_hw.html,section1/dana_hw.html,0.4897,0.4068,0
+charlie_hw.html,section1/dana_hw.html,0.0464,0.1429,0
+bob_hw.html,charlie_hw.html,0.0212,0.1231,0
+alice_hw.html,charlie_hw.html,0.0178,0.1212,0

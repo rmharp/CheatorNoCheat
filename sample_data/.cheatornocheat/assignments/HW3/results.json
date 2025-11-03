@@ -1,0 +1,21 @@
+{
+  "created_at": "2025-11-03T00:00:00Z",
+  "category": "Homework",
+  "directory": "sample_data/HW_Demo",
+  "seq_threshold": 0.82,
+  "jaccard_threshold": 0.7,
+  "results": [
+    {"a": "alice_hw.html", "b": "bob_hw.html", "seq": 0.89, "jac": 0.74},
+    {"a": "bob_hw.html", "b": "dana_hw.html", "seq": 0.86, "jac": 0.73},
+    {"a": "charlie_hw.html", "b": "dana_hw.html", "seq": 0.38, "jac": 0.21},
+    {"a": "alice_hw.html", "b": "charlie_hw.html", "seq": 0.35, "jac": 0.20}
+  ],
+  "name_to_path": {
+    "alice_hw.html": "sample_data/HW_Demo/alice_hw.html",
+    "bob_hw.html": "sample_data/HW_Demo/bob_hw.html",
+    "charlie_hw.html": "sample_data/HW_Demo/charlie_hw.html",
+    "dana_hw.html": "sample_data/HW_Demo/section1/dana_hw.html"
+  }
+}
+
+

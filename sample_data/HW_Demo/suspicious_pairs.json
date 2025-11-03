@@ -1,0 +1,44 @@
+[
+  {
+    "file_a": "alice_hw.html",
+    "file_b": "section1/dana_hw.html",
+    "sequence_similarity": 0.6045883940620783,
+    "jaccard_similarity": 0.5272727272727272,
+    "flagged": true
+  },
+  {
+    "file_a": "alice_hw.html",
+    "file_b": "bob_hw.html",
+    "sequence_similarity": 0.5095238095238095,
+    "jaccard_similarity": 0.4090909090909091,
+    "flagged": true
+  },
+  {
+    "file_a": "bob_hw.html",
+    "file_b": "section1/dana_hw.html",
+    "sequence_similarity": 0.4896836313617607,
+    "jaccard_similarity": 0.4067796610169492,
+    "flagged": false
+  },
+  {
+    "file_a": "charlie_hw.html",
+    "file_b": "section1/dana_hw.html",
+    "sequence_similarity": 0.04642857142857143,
+    "jaccard_similarity": 0.14285714285714285,
+    "flagged": false
+  },
+  {
+    "file_a": "bob_hw.html",
+    "file_b": "charlie_hw.html",
+    "sequence_similarity": 0.021244309559939303,
+    "jaccard_similarity": 0.12307692307692308,
+    "flagged": false
+  },
+  {
+    "file_a": "alice_hw.html",
+    "file_b": "charlie_hw.html",
+    "sequence_similarity": 0.017830609212481426,
+    "jaccard_similarity": 0.12121212121212122,
+    "flagged": false
+  }
+]

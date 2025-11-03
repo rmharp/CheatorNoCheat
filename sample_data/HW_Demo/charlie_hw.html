@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>HW Demo - Charlie</title>
+  <style>pre{background:#f7f7f7;padding:10px;border:1px solid #ddd}</style>
+</head>
+<body>
+  <h1>Charlie - Homework Demo</h1>
+  <p>This is fictitious, generated content for testing only.</p>
+
+  <h2>Analysis</h2>
+  <pre class="sourceCode r"><code># intentionally different to reduce similarity
+x &lt;- seq(0, 2*pi, length.out=50)
+y &lt;- sin(x) + rnorm(length(x), sd=0.05)
+fit &lt;- lm(y ~ poly(x, 3))
+summary(fit)
+predict(fit)
+</code></pre>
+
+  <h2>Plot</h2>
+  <pre class="sourceCode r"><code>library(ggplot2)
+df &lt;- data.frame(x=x, y=y)
+ggplot(df, aes(x, y)) + geom_smooth(se=FALSE, color="darkgreen") + theme_bw()
+</code></pre>
+</body>
+</html>
+
+

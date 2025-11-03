@@ -1,0 +1,5 @@
+Pairs of students to look into (possible copying):
+(thresholds: seq>=0.5, jaccard>=0.5)
+
+alice_hw.html  <-->  section1/dana_hw.html   (seq=0.605, jaccard=0.527)
+alice_hw.html  <-->  bob_hw.html   (seq=0.510, jaccard=0.409)

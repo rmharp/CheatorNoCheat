@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>HW Demo - Bob</title>
+  <style>pre{background:#f7f7f7;padding:10px;border:1px solid #ddd}</style>
+</head>
+<body>
+  <h1>Bob - Homework Demo</h1>
+  <p>This is fictitious, generated content for testing only.</p>
+
+  <h2>Analysis</h2>
+  <pre class="sourceCode r"><code># similar structure with slight changes
+vals &lt;- c(2, 3, 5, 7, 11, 13, 17)
+avg &lt;- mean(vals)
+stdev &lt;- sd(vals)
+print(paste("mean=", avg, "sd=", stdev))
+
+compute_stats &lt;- function(x) {
+  x &lt;- x[x &gt; 0]
+  n &lt;- length(x)
+  total &lt;- sum(x)
+  avg &lt;- mean(x)
+  return(list(n=n, total=total, avg=avg))
+}
+
+summary &lt;- compute_stats(vals)
+print(summary)
+</code></pre>
+
+  <h2>Plot</h2>
+  <pre class="sourceCode r"><code>library(ggplot2)
+df &lt;- data.frame(x=1:10, y=log(1:10))
+ggplot(df, aes(x, y)) + geom_point(color="tomato") + theme_minimal()
+</code></pre>
+</body>
+</html>
+
+

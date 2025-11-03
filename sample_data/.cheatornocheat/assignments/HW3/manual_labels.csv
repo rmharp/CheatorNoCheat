@@ -1,0 +1,4 @@
+file_a,file_b,sequence_similarity,jaccard_similarity,label
+alice_hw.html,bob_hw.html,0.8900,0.7400,cheated
+bob_hw.html,dana_hw.html,0.8600,0.7300,cheated
+
