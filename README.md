@@ -8,8 +8,6 @@
   <img src="docs/assets/demo-placeholder.gif" alt="Cheat or No Cheat Demo" width="720"/>
 </p>
 
-# Cheat or No Cheat
-
 Tools to compare code from knitted Rmd HTML files, flag suspicious similarity, review and label potential copying, visualize patterns, and generate reports.
 
 ## Table of contents
@@ -17,7 +15,7 @@ Tools to compare code from knitted Rmd HTML files, flag suspicious similarity, r
 - [Setup](#setup)
 - [What is measured](#what-is-measured)
 - [CLI](#cli)
-- [Qt GUI](#qt-gui)
+- [GUI](#gui)
   - [Analyze](#analyze)
   - [Review flagged pairs](#review-flagged-pairs)
   - [Side-by-side preview](#side-by-side-preview)
@@ -74,6 +72,12 @@ Quick demo using included fictitious data:
 ```bash
 python compare_rmd_html_code.py sample_data/HW_Demo --open-flagged --open-limit 2
 ```
+
+Statistics and Cheater Network demo (prebuilt assignments):
+
+1) Analyze any folder (e.g., `sample_data/HW_Demo`) and then click "Statistics…"
+2) In the Network tab, set Min co-flag count to 2 to show pairs who cheated together more than once.
+   The included demo creates repeated co-flags for Alice–Bob and Bob–Dana across HW1–HW3.
 
 Outputs next to the selected directory:
 - `suspicious_pairs.csv`, `suspicious_pairs.txt`, `suspicious_pairs.json`
