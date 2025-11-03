@@ -1,0 +1,26 @@
+# Student data and analysis outputs (do not commit real homework)
+hw*/
+HW*/
+suspicious_pairs.csv
+suspicious_pairs.txt
+suspicious_pairs.json
+**/manual_labels.csv
+.cheatornocheat/
+.youcheated/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS/IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Logs and misc
+*.log
