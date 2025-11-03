@@ -1333,8 +1333,23 @@ class MainWindow(QtWidgets.QMainWindow):
 
 
 def main() -> None:
-    # Required on macOS for QtWebEngine
-    os.environ.setdefault("QTWEBENGINE_DISABLE_SANDBOX", "1")
+    # Reduce QtWebEngine console noise and provide a valid dictionaries path outside the repo
+    try:
+        import tempfile
+        if sys.platform == "darwin":
+            dictionaries_dir = Path.home() / "Library" / "Caches" / "CheatOrNoCheat" / "qtwebengine_dictionaries"
+        elif sys.platform.startswith("win"):
+            dictionaries_dir = Path(os.environ.get("LOCALAPPDATA", tempfile.gettempdir())) / "CheatOrNoCheat" / "qtwebengine_dictionaries"
+        else:
+            dictionaries_dir = Path(os.environ.get("XDG_CACHE_HOME", tempfile.gettempdir())) / "cheatornocheat" / "qtwebengine_dictionaries"
+        dictionaries_dir.mkdir(parents=True, exist_ok=True)
+        os.environ.setdefault("QTWEBENGINE_DICTIONARIES_PATH", str(dictionaries_dir))
+    except Exception:
+        pass
+    os.environ.setdefault("QTWEBENGINE_CHROMIUM_FLAGS", "--disable-logging --log-level=3")
+    # Only disable sandbox by default on Linux; avoid noise on macOS where it's often not required
+    if sys.platform.startswith("linux"):
+        os.environ.setdefault("QTWEBENGINE_DISABLE_SANDBOX", "1")
     app = QtWidgets.QApplication(sys.argv)
     win = MainWindow()
     win.show()

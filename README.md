@@ -1,5 +1,3 @@
-# Cheat or No Cheat
-
 <p align="center">
   <!-- Replace with your logo path -->
   <img src="media/logo.png" alt="Cheat or No Cheat Logo" width="160"/>
@@ -9,6 +7,8 @@
   <!-- Recommended format for GitHub inline animations is GIF. MP4 can work via HTML5 video but isn’t always inline. -->
   <img src="docs/assets/demo-placeholder.gif" alt="Cheat or No Cheat Demo" width="720"/>
 </p>
+
+# Cheat or No Cheat
 
 Tools to compare code from knitted Rmd HTML files, flag suspicious similarity, review and label potential copying, visualize patterns, and generate reports.
 
@@ -81,7 +81,7 @@ Outputs next to the selected directory:
 
 `--open-flagged` opens up to N flagged pairs for quick side-by-side inspection.
 
-## Qt GUI
+## GUI
 
 ```bash
 python gui_qt.py
