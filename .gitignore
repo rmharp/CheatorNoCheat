@@ -4,11 +4,17 @@ HW*/
 suspicious_pairs.csv
 suspicious_pairs.txt
 suspicious_pairs.json
-**/manual_labels.csv
 .cheatornocheat/
 .youcheated/
 # QtWebEngine cache path (created at runtime)
 qtwebengine_dictionaries/
+
+# Unignore sample data so demo content is versioned
+!sample_data/**/manual_labels.csv
+!sample_data/**/suspicious_pairs.csv
+!sample_data/**/suspicious_pairs.txt
+!sample_data/**/suspicious_pairs.json
+!sample_data/.cheatornocheat/**
 
 # Virtual environments
 .venv/

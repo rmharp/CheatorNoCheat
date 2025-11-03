@@ -71,7 +71,7 @@ python compare_rmd_html_code.py /path/to/submissions --open-flagged --open-limit
 Quick demo using included fictitious data:
 
 ```bash
-python compare_rmd_html_code.py sample_data/HW_Demo --open-flagged --open-limit 2
+python compare_rmd_html_code.py sample_data/HW_Demo --open-flagged --open-limit 2 --seq-threshold 0.50 --jaccard-threshold 0.50
 ```
 
 ## Demo

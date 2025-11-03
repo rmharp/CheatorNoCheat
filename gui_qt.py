@@ -6,7 +6,7 @@ Run:
     python gui_qt.py
 
 Requires:
-    pip install PySide6 beautifulsoup4
+    pip install -r requirements.txt
 """
 
 from __future__ import annotations
