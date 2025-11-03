@@ -29,7 +29,7 @@ Tools to compare code from knitted Rmd HTML files, flag suspicious similarity, r
 
 ```bash
 # 1) Clone the repository
-git clone https://github.com/<your-org>/CheatorNoCheat.git
+git clone [https://github.com/<your-org>/CheatorNoCheat.git](https://github.com/rmharp/CheatorNoCheat.git)
 cd CheatorNoCheat
 
 # 2) Install Python 3.12 (macOS with Homebrew)
