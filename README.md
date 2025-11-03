@@ -3,11 +3,6 @@
   <img src="media/logo.png" alt="Cheat or No Cheat Logo" width="320"/>
 </p>
 
-<p align="center">
-  <!-- Recommended format for GitHub inline animations is GIF. MP4 can work via HTML5 video but isn’t always inline. -->
-  <img src="docs/assets/demo-placeholder.gif" alt="Cheat or No Cheat Demo" width="720"/>
-</p>
-
 Tools to compare code from knitted Rmd HTML files, flag suspicious similarity, review and label potential copying, visualize patterns, and generate reports.
 
 ## Table of contents
@@ -79,6 +74,10 @@ python compare_rmd_html_code.py sample_data/HW_Demo --open-flagged --open-limit 
 ```
 
 Statistics and Cheater Network demo (prebuilt assignments):
+
+<p align="center">
+  <img src="media/sample.gif" alt="Cheat or No Cheat Demo" width="720"/>
+</p>
 
 1) Analyze any folder (e.g., `sample_data/HW_Demo`) and then click "Statistics…"
 2) In the Network tab, set Min co-flag count to 2 to show pairs who cheated together more than once.
