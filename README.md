@@ -1,5 +1,4 @@
 <p align="center">
-  <!-- Replace with your logo path -->
   <img src="media/logo.png" alt="Cheat or No Cheat Logo" width="320"/>
 </p>
 
