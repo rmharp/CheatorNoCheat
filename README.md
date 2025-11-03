@@ -27,7 +27,7 @@ Tools to compare code from knitted Rmd HTML files, flag suspicious similarity, r
     - [Trends](#trends)
     - [Network](#network)
   - [Report](#report)
-- [Data locations](#data-locations)
+- [Data](#data)
 
 ## Setup
 
@@ -51,7 +51,7 @@ source .venv/bin/activate
 pip install -U pip setuptools wheel
 pip install -r requirements.txt
 
-# 6) Run the GUI
+# 5) Run the GUI
 python gui_qt.py
 ```
 
@@ -63,7 +63,7 @@ python gui_qt.py
 
 ## What this tool is not
 
-This tool is not a substitute for manually reviewing student submissions for cheating. The similarity scores used here (Jaccard and Sequence) are helpful proxies to highlight pairs with unusually similar code, but a high score does not necessarily mean a student has cheated. The intent is to reduce the time required for instructors, TAs, or graders to review all submissions by surfacing a smaller, curated set of suspicious pairs for human review and judgment.
+This tool is not a substitute for manually reviewing student submissions for cheating. The similarity scores used here are helpful proxies to highlight pairs with unusually similar code, but a high score does not necessarily mean a student has cheated. The intent is to reduce the time required for instructors, TAs, or graders to review all submissions by surfacing a smaller, curated set of suspicious pairs for manual human review and judgment.
 
 ## CLI
 
